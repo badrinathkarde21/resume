@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Badrinath Karde — Resume</title>
+<style>
+  :root{
+    --bg:#f7f9fc;
+    --paper:#ffffff;
+    --ink:#1c1f24;
+    --muted:#5b6472;
+    --accent:#1f6feb;
+    --rule:#e1e5ec;
+    --chip-bg:#eef3fa;
+    --chip-fg:#1c2a3a;
+  }
+  html[data-theme="dark"]{
+    --bg:#0c1117;
+    --paper:#0f141a;
+    --ink:#e6edf3;
+    --muted:#9aa4b2;
+    --accent:#3b82f6;
+    --rule:#1f2630;
+    --chip-bg:#111a24;
+    --chip-fg:#dbe5f2;
+  }
+
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,Helvetica,sans-serif;}
+  html,body{height:100%}
+
+  .controls{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--rule);padding:8px 12px;display:flex;gap:8px;justify-content:flex-end;}
+  .btn{appearance:none;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:8px;padding:8px 12px;font-weight:600;cursor:pointer;}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+  .page{max-width:900px;margin:24px auto;padding:0 16px 48px;}
+  .sheet{background:var(--paper);border:1px solid var(--rule);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.06);overflow:hidden;}
+  .pad{padding:28px;}
+  @media (min-width:760px){.pad{padding:36px;}}
+
+  header{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;border-bottom:2px solid var(--rule);padding-bottom:16px;margin-bottom:20px;}
+  header h1{margin:0;font-size:2.1rem;letter-spacing:.02em;}
+  .subtitle{color:var(--muted);font-weight:600;}
+  .contact{color:var(--muted);margin-top:6px;}
+  .contact .sep{color:var(--rule);margin:0 8px;}
+  .avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);}
+
+  .section + .section{border-top:1px solid var(--rule);padding-top:18px;margin-top:18px;}
+  .section h2{margin:0 0 8px 0;font-size:.9rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;}
+  .summary{margin:0 0 12px 0;}
+
+  .grid-2{display:grid;gap:18px;}
+  @media (min-width:700px){.grid-2{grid-template-columns:1.1fr .9fr;}}
+
+  .edu-item{margin-bottom:10px;}
+  .degree{font-weight:800;}
+  .school,.date{color:var(--muted);}
+
+  .skills{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{background:var(--chip-bg);color:var(--chip-fg);padding:6px 10px;border-radius:999px;font-weight:600;font-size:.86rem;border:1px solid var(--rule);}
+
+  .job{border:1px solid var(--rule);border-radius:10px;padding:12px 14px;background:color-mix(in srgb,var(--paper), var(--bg) 8%);margin-top:10px;}
+  .job-header{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+  .employer{font-weight:800;letter-spacing:.02em;}
+  .role{color:var(--muted);font-weight:700;}
+  .meta{color:var(--muted);font-weight:600;font-size:.9rem;}
+  .bullets{margin:8px 0 0 0;padding-left:18px;}
+  .bullets li{margin:6px 0;}
+
+  @media print{@page{margin:14mm;}.controls{display:none !important;}body{background:#fff;}.page{margin:0;padding:0;}.sheet{border:none;box-shadow:none;border-radius:0;}}
+</style>
+</head>
+<body>
+  <div class="controls">
+    <button class="btn" id="themeBtn" aria-pressed="false">Dark mode</button>
+    <button class="btn primary" id="printBtn">Print / Save PDF</button>
+  </div>
+
+  <main class="page">
+    <div class="sheet">
+      <div class="pad">
+        <header>
+          <div>
+            <h1>BADRINATH KARDE</h1>
+            <div class="subtitle">Diploma in Computer Engineering</div>
+            <div class="contact">
+              Chhatrapati Sambhaji Nagar, Tq. Kannad, Deogaon Rangari, 431115 
+              <span class="sep">•</span> 8767891779 
+              <span class="sep">•</span> rohitkarde999@gmail.com
+            </div>
+          </div>
+          <!-- Replace with your uploaded photo -->
+          <img class="avatar" src="C:\users\user\Desktop\resume\profile.jpg.jpg" alt="Profile Photo of Badrinath Karde" />
+        </header>
+
+        <section class="section">
+          <h2>Summary</h2>
+          <p class="summary">
+            Dedicated Computer Engineering student currently pursuing Diploma (3rd Year, 5th Semester). 
+            Skilled in programming languages and cloud technologies with hands-on internship experience. 
+            Passionate about learning and implementing modern software solutions.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="grid-2">
+            <div>
+              <h2>Education</h2>
+              <div class="edu-item">
+                <div class="degree">Diploma in Computer Engineering</div>
+                <div class="school">Vishwabharati Academy's College of Engineering</div>
+                <div class="date">3rd Year (5th Sem) • Last Sem: 72.40%</div>
+              </div>
+              <div class="edu-item">
+                <div class="degree">10th</div>
+                <div class="school">Shri Ganesh Shikshan Sanstha</div>
+                <div class="date">82.40% • 2023</div>
+              </div>
+            </div>
+            <div>
+              <h2>Skills</h2>
+              <div class="skills">
+                <span class="chip">Python (Basic)</span>
+                <span class="chip">C</span>
+                <span class="chip">C++</span>
+                <span class="chip">Java</span>
+                <span class="chip">HTML (Basic)</span>
+                <span class="chip">CSS</span>
+                <span class="chip">AWS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <div class="employer">Montcrest Software Pvt. Ltd</div>
+                <div class="role">AWS Intern</div>
+              </div>
+              <div class="meta">Jun 2, 2025 – Aug 30, 2025</div>
+            </div>
+            <p>(Project details will be added later)</p>
+          </article>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <div class="employer">Cognifyz Technologies</div>
+                <div class="role">Java Development Intern</div>
+              </div>
+              <div class="meta">Jun 2025 – Jul 2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Completed internship as Java Developer.</li>
+              <li>Worked on real-world assignments and improved communication skills.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <p>(Will be added later)</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const themeBtn = document.getElementById('themeBtn');
+      const printBtn = document.getElementById('printBtn');
+
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.setAttribute('data-theme', 'dark');
+      }
+
+      function syncBtnLabel(){
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        themeBtn.textContent = isDark ? 'Light mode' : 'Dark mode';
+        themeBtn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      }
+      syncBtnLabel();
+
+      themeBtn.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          root.removeAttribute('data-theme');
+          localStorage.removeItem('theme');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        syncBtnLabel();
+      });
+
+      printBtn.addEventListener('click', () => window.print());
+    })();
+  </script>
+</body>
+</html>
